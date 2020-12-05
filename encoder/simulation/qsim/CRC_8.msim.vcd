@@ -3,7 +3,7 @@ $comment
 		vcd file CRC_8.msim.vcd -direction
 $end
 $date
-	Sat Dec  5 01:52:43 2020
+	Sat Dec  5 14:53:39 2020
 $end
 $version
 	ModelSim Version 2020.1
@@ -12,7 +12,7 @@ $timescale
 	1ps
 $end
 
-$scope module encoder_crc_8_vhd_vec_tst $end
+$scope module encoder_crc_8_v2_vhd_vec_tst $end
 $var wire 1 ! a [15] $end
 $var wire 1 " a [14] $end
 $var wire 1 # a [13] $end
@@ -80,40 +80,40 @@ $var wire 1 ^ \r[4]~output_o\ $end
 $var wire 1 _ \r[5]~output_o\ $end
 $var wire 1 ` \r[6]~output_o\ $end
 $var wire 1 a \r[7]~output_o\ $end
-$var wire 1 b \a[7]~input_o\ $end
-$var wire 1 c \a[8]~input_o\ $end
-$var wire 1 d \xor_a_8_7|y~combout\ $end
-$var wire 1 e \a[9]~input_o\ $end
+$var wire 1 b \a[3]~input_o\ $end
+$var wire 1 c \a[11]~input_o\ $end
+$var wire 1 d \a[0]~input_o\ $end
+$var wire 1 e \a[15]~input_o\ $end
 $var wire 1 f \a[10]~input_o\ $end
-$var wire 1 g \xor_a_10_9|y~combout\ $end
-$var wire 1 h \a[5]~input_o\ $end
-$var wire 1 i \a[12]~input_o\ $end
-$var wire 1 j \a[0]~input_o\ $end
-$var wire 1 k \a[3]~input_o\ $end
-$var wire 1 l \a[15]~input_o\ $end
-$var wire 1 m \xor_a_15_3_0|xor_final|y~0_combout\ $end
-$var wire 1 n \a[11]~input_o\ $end
-$var wire 1 o \xor_r2|xor_final|xor_final|y~2_combout\ $end
-$var wire 1 p \xor_r0|xor_final|y~0_combout\ $end
-$var wire 1 q \a[13]~input_o\ $end
-$var wire 1 r \a[1]~input_o\ $end
-$var wire 1 s \a[6]~input_o\ $end
-$var wire 1 t \xor_r6|xor_final|y~0_combout\ $end
-$var wire 1 u \a[4]~input_o\ $end
-$var wire 1 v \xor_r1|xor_final|y~0_combout\ $end
-$var wire 1 w \a[14]~input_o\ $end
-$var wire 1 x \xor_r7|xor_final|xor_final|y~0_combout\ $end
-$var wire 1 y \a[2]~input_o\ $end
-$var wire 1 z \xor_r2|xor_final|xor_final|y~combout\ $end
-$var wire 1 { \xor_r5|xor_final|xor_final|y~0_combout\ $end
-$var wire 1 | \xor_a_2_1|y~combout\ $end
-$var wire 1 } \xor_r3|xor_final|y~combout\ $end
-$var wire 1 ~ \xor_r4|xor_final|y~2_combout\ $end
-$var wire 1 !! \xor_r4|xor_final|y~combout\ $end
-$var wire 1 "! \xor_r5|xor_final|xor_final|y~1_combout\ $end
-$var wire 1 #! \xor_r5|xor_final|xor_final|y~2_combout\ $end
-$var wire 1 $! \xor_r6|xor_final|y~1_combout\ $end
-$var wire 1 %! \xor_r7|xor_final|xor_final|y~combout\ $end
+$var wire 1 g \xor_r2|xor_final|y~0_combout\ $end
+$var wire 1 h \a[9]~input_o\ $end
+$var wire 1 i \a[5]~input_o\ $end
+$var wire 1 j \a[7]~input_o\ $end
+$var wire 1 k \a[8]~input_o\ $end
+$var wire 1 l \xor_r5|xor_final|y~0_combout\ $end
+$var wire 1 m \a[12]~input_o\ $end
+$var wire 1 n \xor_r0|xor_final|y~0_combout\ $end
+$var wire 1 o \a[13]~input_o\ $end
+$var wire 1 p \a[6]~input_o\ $end
+$var wire 1 q \a[1]~input_o\ $end
+$var wire 1 r \a[4]~input_o\ $end
+$var wire 1 s \xor6_4_3_1|y~combout\ $end
+$var wire 1 t \xor_r1|xor_final|y~0_combout\ $end
+$var wire 1 u \xor_r1|xor_final|y~1_combout\ $end
+$var wire 1 v \a[14]~input_o\ $end
+$var wire 1 w \a[2]~input_o\ $end
+$var wire 1 x \xor_r4|xor_final|y~2_combout\ $end
+$var wire 1 y \xor_r2|xor_final|y~1_combout\ $end
+$var wire 1 z \xor_r3|xor_final|y~0_combout\ $end
+$var wire 1 { \xor_r3|xor_final|y~combout\ $end
+$var wire 1 | \xor_r6|xor_final|y~0_combout\ $end
+$var wire 1 } \xor_r4|xor_final|y~combout\ $end
+$var wire 1 ~ \xor_a_987|y~combout\ $end
+$var wire 1 !! \xor_r5|xor_final|y~1_combout\ $end
+$var wire 1 "! \xor_r5|xor_final|y~2_combout\ $end
+$var wire 1 #! \xor_r6|xor_final|y~1_combout\ $end
+$var wire 1 $! \xor_r7|xor_final|y~0_combout\ $end
+$var wire 1 %! \xor_r7|xor_final|y~1_combout\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -128,95 +128,95 @@ x;
 1?
 1@
 1A
-0Z
-0[
+1Z
+1[
 0\
 1]
-1^
+0^
 0_
-0`
-0a
+1`
+1a
 1b
-0c
+1c
 1d
 0e
 0f
 0g
 1h
-1i
-0j
-0k
+0i
+1j
+1k
 1l
 1m
-0n
-0o
+1n
+1o
 0p
 0q
 1r
-1s
-1t
+0s
+0t
 1u
 0v
 0w
-0x
-1y
-0z
+1x
+0y
+1z
 1{
-0|
-1}
+1|
+0}
 1~
-1!!
-1"!
-0#!
+0!!
+0"!
+1#!
 0$!
-0%!
-1!
+1%!
+0!
 0"
-0#
+1#
 1$
-0%
+1%
 0&
-0'
-0(
+1'
+1(
 1)
-1*
-1+
+0*
+0+
 1,
-0-
-1.
-1/
-00
-1B
+1-
+0.
+0/
+10
+0B
 0C
-0D
+1D
 1E
-0F
+1F
 0G
-0H
-0I
+1H
+1I
 1J
-1K
-1L
+0K
+0L
 1M
-0N
-1O
-1P
-0Q
-0R
-0S
+1N
+0O
+0P
+1Q
+1R
+1S
 0T
-1U
+0U
 1V
 0W
-0X
-0Y
-01
-02
+1X
+1Y
+11
+12
 03
-14
+04
 15
 06
-07
-08
+17
+18
 $end
 #1000000

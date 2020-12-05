@@ -1,7 +1,7 @@
-Fitter Status : Successful - Sat Dec  5 01:52:19 2020
+Fitter Status : Successful - Sat Dec  5 14:53:26 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : CRC_8
-Top-level Entity Name : encoder_CRC_8
+Top-level Entity Name : encoder_CRC_8_v2
 Family : Cyclone IV E
 Device : EP4CE6E22C6
 Timing Models : Final
