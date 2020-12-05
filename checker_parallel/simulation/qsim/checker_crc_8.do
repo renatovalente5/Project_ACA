@@ -2,7 +2,7 @@ onerror {exit -code 1}
 vlib work
 vcom -work work checker_crc_8.vho
 vcom -work work Waveform.vwf.vht
-vsim -novopt -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.checker_crc_8_vhd_vec_tst
+vsim -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.checker_crc_8_vhd_vec_tst
 vcd file -direction checker_crc_8.msim.vcd
 vcd add -internal checker_crc_8_vhd_vec_tst/*
 vcd add -internal checker_crc_8_vhd_vec_tst/i1/*
@@ -15,3 +15,4 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+

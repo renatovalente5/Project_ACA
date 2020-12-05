@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat Dec 05 17:01:34 2020
-Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Sat Dec  5 23:37:16 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : checker_crc_8
 Top-level Entity Name : checker_CRC_8
 Family : Cyclone IV GX
-Total logic elements : 25
-    Total combinational functions : 25
+Total logic elements : 24
+    Total combinational functions : 24
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 33
+Total pins : 25
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

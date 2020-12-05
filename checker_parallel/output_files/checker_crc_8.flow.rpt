@@ -1,6 +1,6 @@
 Flow report for checker_crc_8
-Sat Dec 05 17:01:50 2020
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Sat Dec  5 23:38:15 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -21,9 +21,9 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -33,23 +33,24 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Dec 05 17:01:50 2020       ;
-; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Flow Status                        ; Successful - Sat Dec  5 23:38:15 2020       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; checker_crc_8                               ;
 ; Top-level Entity Name              ; checker_CRC_8                               ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 25 / 14,400 ( < 1 % )                       ;
-;     Total combinational functions  ; 25 / 14,400 ( < 1 % )                       ;
+; Total logic elements               ; 24 / 14,400 ( < 1 % )                       ;
+;     Total combinational functions  ; 24 / 14,400 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 0 / 14,400 ( 0 % )                          ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 33 / 81 ( 41 % )                            ;
+; Total pins                         ; 25 / 81 ( 31 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 552,960 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -68,7 +69,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/05/2020 17:01:19 ;
+; Start date & time ; 12/05/2020 23:37:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; checker_crc_8       ;
 +-------------------+---------------------+
@@ -79,7 +80,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 150461129442485.160718767901356        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 250974920162250.160721142640497        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -90,31 +91,39 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 4854 MB             ; 00:00:31                           ;
-; Fitter                    ; 00:00:06     ; 1.0                     ; 5314 MB             ; 00:00:06                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4737 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4719 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4705 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:42                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 481 MB              ; 00:00:28                           ;
+; Fitter               ; 00:00:04     ; 1.0                     ; 1023 MB             ; 00:00:05                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 412 MB              ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 440 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 662 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 661 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 662 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 661 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 661 MB              ; 00:00:00                           ;
+; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:35                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                         ;
-+---------------------------+------------------+------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; LAPTOP-0HAQ42KH  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; LAPTOP-0HAQ42KH  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; LAPTOP-0HAQ42KH  ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; LAPTOP-0HAQ42KH  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-0HAQ42KH  ; Windows 10 ; 10.0       ; x86_64         ;
-+---------------------------+------------------+------------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++----------------------+------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++----------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; andralves-TM1701 ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
+; Fitter               ; andralves-TM1701 ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
+; Assembler            ; andralves-TM1701 ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
+; Timing Analyzer      ; andralves-TM1701 ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; andralves-TM1701 ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; andralves-TM1701 ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; andralves-TM1701 ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; andralves-TM1701 ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; andralves-TM1701 ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
++----------------------+------------------+----------------+------------+----------------+
 
 
 ------------
@@ -125,6 +134,10 @@ quartus_fit --read_settings_files=off --write_settings_files=off checker_crc_8 -
 quartus_asm --read_settings_files=off --write_settings_files=off checker_crc_8 -c checker_crc_8
 quartus_sta checker_crc_8 -c checker_crc_8
 quartus_eda --read_settings_files=off --write_settings_files=off checker_crc_8 -c checker_crc_8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off checker_crc_8 -c checker_crc_8 --vector_source=/home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/Waveform.vwf --testbench_file=/home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/simulation/qsim/ checker_crc_8 -c checker_crc_8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off checker_crc_8 -c checker_crc_8 --vector_source=/home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/Waveform.vwf --testbench_file=/home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/simulation/qsim/ checker_crc_8 -c checker_crc_8
 
 
 
