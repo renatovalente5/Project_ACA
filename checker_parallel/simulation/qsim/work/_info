@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Asus/Desktop/aca_crc/checker/simulation/qsim
+Echecker_crc_8
+Z1 w1607187509
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 h>^;BQWjM;n:gDXGk_;g00
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx9 cycloneiv 20 cycloneiv_components 0 22 ZG8VboUoN;mJ7?NJMokFV1
+R0
+Z8 8checker_crc_8.vho
+Z9 Fchecker_crc_8.vho
+l0
+L77
+VOba;om_z`DmG@e8`T[Mco2
+!s100 >m9=08FIgf9:R9K8k:DhA1
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1607187510
+!i10b 1
+Z12 !s108 1607187510.000000
+Z13 !s90 -work|work|checker_crc_8.vho|
+Z14 !s107 checker_crc_8.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 13 checker_crc_8 0 22 Oba;om_z`DmG@e8`T[Mco2
+l200
+L121
+V8j?5z`Qm2cBK;8T:F7`iI0
+!s100 P8<MMGXL12KCSf60_;a2O1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Echecker_crc_8_vhd_vec_tst
+Z17 w1607187507
+R5
+R6
+R0
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L31
+VB]Q4kobU=<LnXOemACzdM1
+!s100 GjS4`2Z<UA2CQ6OEn72n<0
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|Waveform.vwf.vht|
+Z21 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Achecker_crc_8_arch
+R5
+R6
+Z22 DEx4 work 25 checker_crc_8_vhd_vec_tst 0 22 B]Q4kobU=<LnXOemACzdM1
+l46
+L33
+Z23 V=TW_<6DObn:]aBUURS4413
+Z24 !s100 baa]3Wme7OMNOX5DQ1ikb2
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16
+Ehard_block
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L34
+Vc_zG6gj]l9@McI1b^mKMk3
+!s100 ePBnogNIYclWVmd<QYN@33
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 c_zG6gj]l9@McI1b^mKMk3
+l64
+L50
+V^TJfMN143Hleg=oLnW2^A1
+!s100 9XRhD6F>^g=RX1;2c[R1L2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
