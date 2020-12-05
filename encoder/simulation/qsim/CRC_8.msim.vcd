@@ -3,7 +3,7 @@ $comment
 		vcd file CRC_8.msim.vcd -direction
 $end
 $date
-	Sat Dec  5 00:44:18 2020
+	Sat Dec  5 01:52:43 2020
 $end
 $version
 	ModelSim Version 2020.1
@@ -80,39 +80,40 @@ $var wire 1 ^ \r[4]~output_o\ $end
 $var wire 1 _ \r[5]~output_o\ $end
 $var wire 1 ` \r[6]~output_o\ $end
 $var wire 1 a \r[7]~output_o\ $end
-$var wire 1 b \a[10]~input_o\ $end
-$var wire 1 c \a[11]~input_o\ $end
-$var wire 1 d \a[9]~input_o\ $end
-$var wire 1 e \a[12]~input_o\ $end
-$var wire 1 f \xor_r2|xor_final|y~0_combout\ $end
-$var wire 1 g \a[8]~input_o\ $end
+$var wire 1 b \a[7]~input_o\ $end
+$var wire 1 c \a[8]~input_o\ $end
+$var wire 1 d \xor_a_8_7|y~combout\ $end
+$var wire 1 e \a[9]~input_o\ $end
+$var wire 1 f \a[10]~input_o\ $end
+$var wire 1 g \xor_a_10_9|y~combout\ $end
 $var wire 1 h \a[5]~input_o\ $end
-$var wire 1 i \a[7]~input_o\ $end
-$var wire 1 j \xor_r0|xor_final|y~0_combout\ $end
-$var wire 1 k \a[0]~input_o\ $end
+$var wire 1 i \a[12]~input_o\ $end
+$var wire 1 j \a[0]~input_o\ $end
+$var wire 1 k \a[3]~input_o\ $end
 $var wire 1 l \a[15]~input_o\ $end
-$var wire 1 m \a[3]~input_o\ $end
-$var wire 1 n \xor_a_15_3_0|xor_final|y~0_combout\ $end
-$var wire 1 o \xor_r0|xor_final|y~combout\ $end
-$var wire 1 p \a[1]~input_o\ $end
+$var wire 1 m \xor_a_15_3_0|xor_final|y~0_combout\ $end
+$var wire 1 n \a[11]~input_o\ $end
+$var wire 1 o \xor_r2|xor_final|xor_final|y~2_combout\ $end
+$var wire 1 p \xor_r0|xor_final|y~0_combout\ $end
 $var wire 1 q \a[13]~input_o\ $end
-$var wire 1 r \a[6]~input_o\ $end
-$var wire 1 s \xor_r6|xor_final|y~0_combout\ $end
-$var wire 1 t \a[4]~input_o\ $end
-$var wire 1 u \xor_r1|xor_final|y~0_combout\ $end
-$var wire 1 v \a[14]~input_o\ $end
-$var wire 1 w \a[2]~input_o\ $end
-$var wire 1 x \xor_r2|xor_final|y~1_combout\ $end
-$var wire 1 y \xor_r2|xor_final|y~2_combout\ $end
-$var wire 1 z \xor_r5|xor_final|y~0_combout\ $end
-$var wire 1 { \xor_r3|xor_final|y~combout\ $end
-$var wire 1 | \xor_r4|xor_final|y~0_combout\ $end
-$var wire 1 } \xor_r4|xor_final|y~combout\ $end
-$var wire 1 ~ \xor_r5|xor_final|y~1_combout\ $end
-$var wire 1 !! \xor_r5|xor_final|y~2_combout\ $end
-$var wire 1 "! \xor_r6|xor_final|y~1_combout\ $end
-$var wire 1 #! \xor_r7|xor_final|y~0_combout\ $end
-$var wire 1 $! \xor_r7|xor_final|y~combout\ $end
+$var wire 1 r \a[1]~input_o\ $end
+$var wire 1 s \a[6]~input_o\ $end
+$var wire 1 t \xor_r6|xor_final|y~0_combout\ $end
+$var wire 1 u \a[4]~input_o\ $end
+$var wire 1 v \xor_r1|xor_final|y~0_combout\ $end
+$var wire 1 w \a[14]~input_o\ $end
+$var wire 1 x \xor_r7|xor_final|xor_final|y~0_combout\ $end
+$var wire 1 y \a[2]~input_o\ $end
+$var wire 1 z \xor_r2|xor_final|xor_final|y~combout\ $end
+$var wire 1 { \xor_r5|xor_final|xor_final|y~0_combout\ $end
+$var wire 1 | \xor_a_2_1|y~combout\ $end
+$var wire 1 } \xor_r3|xor_final|y~combout\ $end
+$var wire 1 ~ \xor_r4|xor_final|y~2_combout\ $end
+$var wire 1 !! \xor_r4|xor_final|y~combout\ $end
+$var wire 1 "! \xor_r5|xor_final|xor_final|y~1_combout\ $end
+$var wire 1 #! \xor_r5|xor_final|xor_final|y~2_combout\ $end
+$var wire 1 $! \xor_r6|xor_final|y~1_combout\ $end
+$var wire 1 %! \xor_r7|xor_final|xor_final|y~combout\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -132,42 +133,43 @@ x;
 0\
 1]
 1^
-1_
+0_
 0`
 0a
-0b
+1b
 0c
-0d
-1e
-1f
+1d
+0e
+0f
 0g
 1h
 1i
 0j
 0k
 1l
-0m
-1n
+1m
+0n
 0o
-1p
+0p
 0q
 1r
 1s
 1t
-0u
+1u
 0v
-1w
+0w
 0x
-0y
-1z
+1y
+0z
 1{
 0|
 1}
 1~
 1!!
-0"!
-1#!
+1"!
+0#!
 0$!
+0%!
 1!
 0"
 0#
@@ -202,7 +204,7 @@ x;
 0Q
 0R
 0S
-1T
+0T
 1U
 1V
 0W
@@ -210,7 +212,7 @@ x;
 0Y
 01
 02
-13
+03
 14
 15
 06

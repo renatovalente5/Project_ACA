@@ -52,7 +52,7 @@ BEGIN
 	xor_r6:			gateXOR6 port map(a10_9, a8_7, a6_5, a(13), a(3), a(1), r(6));
 	
 	--r5
-	xor_r5:			gateXOR6 port map(a8_7, a6_5, a2_1, a(12), a(9), a(4), r(5));
+	xor_r5:			gateXOR7 port map(a8_7, a6_5, a(12), a(9), a(4), a(2), a(0), r(5));
 	
 	--r4
 	xor_r4:			gateXOR5 port map(a10_9, a2_1, a(14), a(5), a(3), r(4));

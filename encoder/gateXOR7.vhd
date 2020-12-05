@@ -17,6 +17,6 @@ ARCHITECTURE logicFunction OF gateXOR7 IS
 BEGIN
 
    xor_1: gateXOR4 port map(x0, x1, x2, x3, y0);
-	xor_final: gateXOR4 port map(y0, x4, x5, x5, y);
+	xor_final: gateXOR4 port map(y0, x4, x5, x6, y);
   
 END logicFunction;
