@@ -1,0 +1,26 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY gateXOR7 IS
+  PORT (x0, x1, x2, x3, x4, x5, x6 : IN STD_LOGIC;
+										y: OUT STD_LOGIC);
+END gateXOR7;
+
+ARCHITECTURE logicFunction OF gateXOR7 IS
+	signal y0 : std_logic;
+
+	component gateXOR2
+		port(x0,x1 : in STD_LOGIC;
+					y : out STD_LOGIC);
+	end component;
+	component gateXOR6
+		port(x0,x1,x2,x3,x4,x5 : in STD_LOGIC;
+									y : out STD_LOGIC);
+	end component;
+
+BEGIN
+
+   xor_1: gateXOR5 port map(x0, x1, x2, x3, x4, x5, y0);
+	xor_final: gateXOR2 port map(y0, x5, y);
+  
+END logicFunction;
