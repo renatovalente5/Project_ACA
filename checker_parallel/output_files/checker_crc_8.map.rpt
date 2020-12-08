@@ -1,5 +1,5 @@
 Analysis & Synthesis report for checker_crc_8
-Sat Dec  5 23:37:16 2020
+Tue Dec  8 05:16:09 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -43,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec  5 23:37:16 2020       ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec  8 05:16:09 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; checker_crc_8                               ;
 ; Top-level Entity Name              ; checker_CRC_8                               ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 24                                          ;
-;     Total combinational functions  ; 24                                          ;
+; Total logic elements               ; 23                                          ;
+;     Total combinational functions  ; 23                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 25                                          ;
@@ -175,9 +175,6 @@ https://fpgasoftware.intel.com/eula.
 ; encoder_CRC_8.vhd                ; yes             ; User VHDL File  ; /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/encoder_CRC_8.vhd ;         ;
 ; gateXOR3.vhd                     ; yes             ; User VHDL File  ; /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR3.vhd      ;         ;
 ; gateXOR4.vhd                     ; yes             ; User VHDL File  ; /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR4.vhd      ;         ;
-; gateXOR5.vhd                     ; yes             ; User VHDL File  ; /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR5.vhd      ;         ;
-; gateXOR6.vhd                     ; yes             ; User VHDL File  ; /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR6.vhd      ;         ;
-; gateXOR7.vhd                     ; yes             ; User VHDL File  ; /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR7.vhd      ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
 
 
@@ -190,33 +187,33 @@ https://fpgasoftware.intel.com/eula.
 ;                          ;                  ;
 ; DSP block 9-bit elements ; 0                ;
 ;                          ;                  ;
-; Maximum fan-out node     ; a_r[10]~input    ;
+; Maximum fan-out node     ; a_r[14]~input    ;
 ; Maximum fan-out          ; 5                ;
-; Total fan-out            ; 113              ;
-; Average fan-out          ; 1.53             ;
+; Total fan-out            ; 116              ;
+; Average fan-out          ; 1.59             ;
 +--------------------------+------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                      ;
-+--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Entity Name   ; Library Name ;
-+--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------+---------------+--------------+
-; |checker_CRC_8                 ; 24 (5)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 25   ; 0            ; |checker_CRC_8                                                                    ; checker_CRC_8 ; work         ;
-;    |encoder_CRC_8:encode_crc8| ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|encoder_CRC_8:encode_crc8                                          ; encoder_CRC_8 ; work         ;
-;       |gateXOR2:xor_a_10_9|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|encoder_CRC_8:encode_crc8|gateXOR2:xor_a_10_9                      ; gateXOR2      ; work         ;
-;       |gateXOR2:xor_a_8_7|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|encoder_CRC_8:encode_crc8|gateXOR2:xor_a_8_7                       ; gateXOR2      ; work         ;
-;       |gateXOR3:xor_a_15_3_0|  ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|encoder_CRC_8:encode_crc8|gateXOR3:xor_a_15_3_0                    ; gateXOR3      ; work         ;
-;          |gateXOR2:xor_final|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|encoder_CRC_8:encode_crc8|gateXOR3:xor_a_15_3_0|gateXOR2:xor_final ; gateXOR2      ; work         ;
-;    |gateXOR2:error_0|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_0                                                   ; gateXOR2      ; work         ;
-;    |gateXOR2:error_1|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_1                                                   ; gateXOR2      ; work         ;
-;    |gateXOR2:error_2|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_2                                                   ; gateXOR2      ; work         ;
-;    |gateXOR2:error_3|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_3                                                   ; gateXOR2      ; work         ;
-;    |gateXOR2:error_4|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_4                                                   ; gateXOR2      ; work         ;
-;    |gateXOR2:error_5|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_5                                                   ; gateXOR2      ; work         ;
-;    |gateXOR2:error_6|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_6                                                   ; gateXOR2      ; work         ;
-;    |gateXOR2:error_7|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_7                                                   ; gateXOR2      ; work         ;
-+--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------+---------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                    ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Entity Name   ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------+---------------+--------------+
+; |checker_CRC_8                 ; 23 (4)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 25   ; 0            ; |checker_CRC_8                                                  ; checker_CRC_8 ; work         ;
+;    |encoder_CRC_8:encode_crc8| ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|encoder_CRC_8:encode_crc8                        ; encoder_CRC_8 ; work         ;
+;       |gateXOR2:xor_10_9_8_7|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|encoder_CRC_8:encode_crc8|gateXOR2:xor_10_9_8_7  ; gateXOR2      ; work         ;
+;       |gateXOR2:xor_13_5_3_1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|encoder_CRC_8:encode_crc8|gateXOR2:xor_13_5_3_1  ; gateXOR2      ; work         ;
+;       |gateXOR2:xor_14_11_4_2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|encoder_CRC_8:encode_crc8|gateXOR2:xor_14_11_4_2 ; gateXOR2      ; work         ;
+;       |gateXOR2:xor_a15_6|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|encoder_CRC_8:encode_crc8|gateXOR2:xor_a15_6     ; gateXOR2      ; work         ;
+;    |gateXOR2:error_0|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_0                                 ; gateXOR2      ; work         ;
+;    |gateXOR2:error_1|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_1                                 ; gateXOR2      ; work         ;
+;    |gateXOR2:error_2|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_2                                 ; gateXOR2      ; work         ;
+;    |gateXOR2:error_3|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_3                                 ; gateXOR2      ; work         ;
+;    |gateXOR2:error_4|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_4                                 ; gateXOR2      ; work         ;
+;    |gateXOR2:error_5|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_5                                 ; gateXOR2      ; work         ;
+;    |gateXOR2:error_6|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_6                                 ; gateXOR2      ; work         ;
+;    |gateXOR2:error_7|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |checker_CRC_8|gateXOR2:error_7                                 ; gateXOR2      ; work         ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -241,14 +238,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 25                          ;
-; cycloneiii_lcell_comb ; 24                          ;
-;     normal            ; 24                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 17                          ;
+; cycloneiii_lcell_comb ; 23                          ;
+;     normal            ; 23                          ;
+;         2 data inputs ; 1                           ;
+;         4 data inputs ; 22                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 4.10                        ;
+; Average LUT depth     ; 4.04                        ;
 +-----------------------+-----------------------------+
 
 
@@ -267,7 +263,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Dec  5 23:37:06 2020
+    Info: Processing started: Tue Dec  8 05:16:00 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off checker_crc_8 -c checker_crc_8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -286,34 +282,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file gateXOR
 Info (12021): Found 2 design units, including 1 entities, in source file gateXOR4.vhd
     Info (12022): Found design unit 1: gateXOR4-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR4.vhd Line: 9
     Info (12023): Found entity 1: gateXOR4 File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR4.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file gateXOR5.vhd
-    Info (12022): Found design unit 1: gateXOR5-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR5.vhd Line: 9
-    Info (12023): Found entity 1: gateXOR5 File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR5.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file gateXOR6.vhd
-    Info (12022): Found design unit 1: gateXOR6-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR6.vhd Line: 9
-    Info (12023): Found entity 1: gateXOR6 File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR6.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file gateXOR7.vhd
-    Info (12022): Found design unit 1: gateXOR7-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR7.vhd Line: 9
-    Info (12023): Found entity 1: gateXOR7 File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR7.vhd Line: 4
 Info (12127): Elaborating entity "checker_crc_8" for the top level hierarchy
 Info (12128): Elaborating entity "encoder_CRC_8" for hierarchy "encoder_CRC_8:encode_crc8" File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/checker_crc_8.vhd Line: 26
-Info (12128): Elaborating entity "gateXOR3" for hierarchy "encoder_CRC_8:encode_crc8|gateXOR3:xor_a_15_3_0" File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/encoder_CRC_8.vhd Line: 40
-Info (12128): Elaborating entity "gateXOR2" for hierarchy "encoder_CRC_8:encode_crc8|gateXOR3:xor_a_15_3_0|gateXOR2:xor_1" File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR3.vhd Line: 19
-Info (12128): Elaborating entity "gateXOR7" for hierarchy "encoder_CRC_8:encode_crc8|gateXOR7:xor_r7" File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/encoder_CRC_8.vhd Line: 48
-Info (12128): Elaborating entity "gateXOR4" for hierarchy "encoder_CRC_8:encode_crc8|gateXOR7:xor_r7|gateXOR4:xor_1" File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/gateXOR7.vhd Line: 19
-Info (12128): Elaborating entity "gateXOR6" for hierarchy "encoder_CRC_8:encode_crc8|gateXOR6:xor_r6" File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/encoder_CRC_8.vhd Line: 51
-Info (12128): Elaborating entity "gateXOR5" for hierarchy "encoder_CRC_8:encode_crc8|gateXOR5:xor_r4" File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/encoder_CRC_8.vhd Line: 57
+Info (12128): Elaborating entity "gateXOR2" for hierarchy "encoder_CRC_8:encode_crc8|gateXOR2:xor_a14_2" File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/encoder_CRC_8.vhd Line: 39
+Info (12128): Elaborating entity "gateXOR4" for hierarchy "encoder_CRC_8:encode_crc8|gateXOR4:xor_r5" File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/encoder_CRC_8.vhd Line: 72
+Info (12128): Elaborating entity "gateXOR3" for hierarchy "encoder_CRC_8:encode_crc8|gateXOR3:xor_r4" File: /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/encoder_CRC_8.vhd Line: 75
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 49 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 24 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 24 logic cells
+    Info (21061): Implemented 23 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 481 megabytes
-    Info: Processing ended: Sat Dec  5 23:37:16 2020
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Peak virtual memory: 482 megabytes
+    Info: Processing ended: Tue Dec  8 05:16:09 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:25
 
 

@@ -9,52 +9,52 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/simulation/modelsim
-Eencoder_crc_8
-Z1 w1607129028
+Eencoder_crc_8_v3
+Z1 w1607401349
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 0
+!i122 3
 R0
-Z4 8/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd
-Z5 F/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd
+Z4 8/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8_v3.vhd
+Z5 F/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8_v3.vhd
 l0
 L4 1
-VF1`dUf@>5_3WbRgiYQ<z90
-!s100 ^HLhP:eED99Nb?HVHcH^_1
+VIkKJH?4?b;ZWzWzjWJmd@2
+!s100 6KeflMRemY;5GkgK4Z0ze1
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1607129080
+Z7 !s110 1607401657
 !i10b 1
-Z8 !s108 1607129080.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd|
-Z10 !s107 /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd|
+Z8 !s108 1607401657.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8_v3.vhd|
+!s107 /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8_v3.vhd|
 !i113 1
-Z11 o-93 -work work
-Z12 tExplicit 1 CvgOpt 0
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
 Alogicfunction
 R2
 R3
-DEx4 work 13 encoder_crc_8 0 22 F1`dUf@>5_3WbRgiYQ<z90
-!i122 0
-l39
-L9 68
-Vd1OAl8IkMNYS2Gm60<[Oi2
-!s100 >b]ez^_O1k8kW3h42Ta:W3
+DEx4 work 16 encoder_crc_8_v3 0 22 IkKJH?4?b;ZWzWzjWJmd@2
+!i122 3
+l36
+L9 85
+VdQ;_AjG?@nHBKHF>Sc^^L0
+!s100 Xd>ARYF5bK_:3k21J_GLd0
 R6
 31
 R7
 !i10b 1
 R8
 R9
-R10
+Z12 !s107 /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8_v3.vhd|
 !i113 1
+R10
 R11
-R12
 Egatexor2
-Z13 w1607124651
+Z13 w1607401530
 R2
 R3
-!i122 1
+!i122 0
 R0
 Z14 8/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR2.vhd
 Z15 F/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR2.vhd
@@ -70,17 +70,17 @@ R8
 Z16 !s90 -reportprogress|300|-93|-work|work|/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR2.vhd|
 Z17 !s107 /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR2.vhd|
 !i113 1
+R10
 R11
-R12
 Alogicfunction
 R2
 R3
 DEx4 work 8 gatexor2 0 22 =h<lS>Y_58=Yma?HRJS[^3
-!i122 1
+!i122 0
 l10
 L9 4
-VTa?KW9fja]X5fA?fd;AFo2
-!s100 IeJ[<0^kgo=SZ=0GVcTL:1
+Vz<6PD=>c5kYgh[nM:dc4_1
+!s100 ;MOlMa5zbO[n[aTa2a?Ac2
 R6
 31
 R7
@@ -89,13 +89,13 @@ R8
 R16
 R17
 !i113 1
+R10
 R11
-R12
 Egatexor3
 Z18 w1607125237
 R2
 R3
-!i122 2
+!i122 1
 R0
 Z19 8/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR3.vhd
 Z20 F/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR3.vhd
@@ -111,13 +111,13 @@ R8
 Z21 !s90 -reportprogress|300|-93|-work|work|/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR3.vhd|
 Z22 !s107 /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR3.vhd|
 !i113 1
+R10
 R11
-R12
 Alogicfunction
 R2
 R3
 DEx4 work 8 gatexor3 0 22 KL1_8FbWc@h:k8]Y<kUP?3
-!i122 2
+!i122 1
 l17
 L9 14
 VmJ9Yk[?jnoejH5OJY>^0i3
@@ -130,13 +130,13 @@ R8
 R21
 R22
 !i113 1
+R10
 R11
-R12
 Egatexor4
-Z23 w1607129009
+Z23 w1607129272
 R2
 R3
-!i122 3
+!i122 2
 R0
 Z24 8/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR4.vhd
 Z25 F/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR4.vhd
@@ -152,17 +152,17 @@ R8
 Z26 !s90 -reportprogress|300|-93|-work|work|/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR4.vhd|
 Z27 !s107 /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR4.vhd|
 !i113 1
+R10
 R11
-R12
 Alogicfunction
 R2
 R3
 DEx4 work 8 gatexor4 0 22 Cf:6Cgj2Czm8DFdlA5P>_1
-!i122 3
-l22
-L9 19
-V6jEeR26cL38iPCTR5deI13
-!s100 j=F<>GBX?5^A?Q:X9]cjP3
+!i122 2
+l17
+L9 15
+VGLU24hGQkQK:PWc3BTozn0
+!s100 ENGdNG3LDhHSoW>?@XG^U3
 R6
 31
 R7
@@ -171,128 +171,5 @@ R8
 R26
 R27
 !i113 1
+R10
 R11
-R12
-Egatexor5
-Z28 w1607125752
-R2
-R3
-!i122 4
-R0
-Z29 8/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR5.vhd
-Z30 F/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR5.vhd
-l0
-L4 1
-VG_5J3LRhXJSE94ob:4LOo3
-!s100 3BlT6Sz7H]fkCCJ[:?[eC1
-R6
-31
-R7
-!i10b 1
-R8
-Z31 !s90 -reportprogress|300|-93|-work|work|/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR5.vhd|
-Z32 !s107 /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR5.vhd|
-!i113 1
-R11
-R12
-Alogicfunction
-R2
-R3
-DEx4 work 8 gatexor5 0 22 G_5J3LRhXJSE94ob:4LOo3
-!i122 4
-l21
-Z33 L9 18
-VT?A=mOj1G?gzNJRWVG8c_2
-!s100 k:d7>FQ1jFL2M>>PQSXYI3
-R6
-31
-R7
-!i10b 1
-R8
-R31
-R32
-!i113 1
-R11
-R12
-Egatexor6
-Z34 w1607128418
-R2
-R3
-!i122 5
-R0
-Z35 8/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR6.vhd
-Z36 F/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR6.vhd
-l0
-L4 1
-V4N??_[hT6PH7NU]G[UIbM1
-!s100 1kWPJQAEhK`C]PL:KC33X0
-R6
-31
-R7
-!i10b 1
-R8
-Z37 !s90 -reportprogress|300|-93|-work|work|/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR6.vhd|
-Z38 !s107 /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR6.vhd|
-!i113 1
-R11
-R12
-Alogicfunction
-R2
-R3
-DEx4 work 8 gatexor6 0 22 4N??_[hT6PH7NU]G[UIbM1
-!i122 5
-l21
-R33
-VSQLYYc2352TJhZfdb2LdB0
-!s100 e[J8Z:_:IDg:OE:oPBKi:2
-R6
-31
-R7
-!i10b 1
-R8
-R37
-R38
-!i113 1
-R11
-R12
-Egatexor7
-Z39 w1607128458
-R2
-R3
-!i122 6
-R0
-Z40 8/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR7.vhd
-Z41 F/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR7.vhd
-l0
-L4 1
-Vo7nh2ld88>J1eQX`6cCXi1
-!s100 XICQ]XFGW@@CU1aL6EgTO0
-R6
-31
-Z42 !s110 1607129081
-!i10b 1
-R8
-Z43 !s90 -reportprogress|300|-93|-work|work|/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR7.vhd|
-!s107 /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR7.vhd|
-!i113 1
-R11
-R12
-Alogicfunction
-R2
-R3
-DEx4 work 8 gatexor7 0 22 o7nh2ld88>J1eQX`6cCXi1
-!i122 6
-l21
-R33
-VV7FG:mKD52H7OCHD;H;ah0
-!s100 RaimN13?T6AcnDkld_A9=3
-R6
-31
-R42
-!i10b 1
-R8
-R43
-Z44 !s107 /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR7.vhd|
-!i113 1
-R11
-R12

@@ -3,7 +3,7 @@ $comment
 		vcd file checker_crc_8.msim.vcd -direction
 $end
 $date
-	Sat Dec  5 23:38:16 2020
+	Tue Dec  8 05:38:43 2020
 $end
 $version
 	ModelSim Version 2020.1
@@ -75,54 +75,53 @@ $var wire 1 Y ww_a_r [1] $end
 $var wire 1 Z ww_a_r [0] $end
 $var wire 1 [ ww_check $end
 $var wire 1 \ \check~output_o\ $end
-$var wire 1 ] \a_r[10]~input_o\ $end
-$var wire 1 ^ \a_r[16]~input_o\ $end
-$var wire 1 _ \a_r[21]~input_o\ $end
-$var wire 1 ` \a_r[9]~input_o\ $end
-$var wire 1 a \error_3|y~0_combout\ $end
-$var wire 1 b \a_r[11]~input_o\ $end
-$var wire 1 c \a_r[17]~input_o\ $end
-$var wire 1 d \a_r[18]~input_o\ $end
-$var wire 1 e \encode_crc8|xor_a_10_9|y~combout\ $end
-$var wire 1 f \a_r[22]~input_o\ $end
-$var wire 1 g \a_r[13]~input_o\ $end
-$var wire 1 h \error_4|y~0_combout\ $end
-$var wire 1 i \a_r[4]~input_o\ $end
-$var wire 1 j \error_4|y~combout\ $end
-$var wire 1 k \a_r[8]~input_o\ $end
-$var wire 1 l \a_r[12]~input_o\ $end
+$var wire 1 ] \a_r[15]~input_o\ $end
+$var wire 1 ^ \a_r[1]~input_o\ $end
+$var wire 1 _ \a_r[12]~input_o\ $end
+$var wire 1 ` \a_r[14]~input_o\ $end
+$var wire 1 a \a_r[23]~input_o\ $end
+$var wire 1 b \a_r[8]~input_o\ $end
+$var wire 1 c \error_1|y~0_combout\ $end
+$var wire 1 d \a_r[13]~input_o\ $end
+$var wire 1 e \a_r[21]~input_o\ $end
+$var wire 1 f \a_r[11]~input_o\ $end
+$var wire 1 g \a_r[9]~input_o\ $end
+$var wire 1 h \encode_crc8|xor_13_5_3_1|y~combout\ $end
+$var wire 1 i \error_1|y~1_combout\ $end
+$var wire 1 j \a_r[17]~input_o\ $end
+$var wire 1 k \a_r[5]~input_o\ $end
+$var wire 1 l \a_r[10]~input_o\ $end
 $var wire 1 m \error_5|y~1_combout\ $end
-$var wire 1 n \a_r[3]~input_o\ $end
-$var wire 1 o \check~3_combout\ $end
-$var wire 1 p \a_r[6]~input_o\ $end
-$var wire 1 q \error_6|y~1_combout\ $end
-$var wire 1 r \a_r[15]~input_o\ $end
-$var wire 1 s \a_r[14]~input_o\ $end
-$var wire 1 t \error_6|y~0_combout\ $end
-$var wire 1 u \error_6|y~2_combout\ $end
-$var wire 1 v \a_r[20]~input_o\ $end
-$var wire 1 w \error_5|y~2_combout\ $end
-$var wire 1 x \a_r[5]~input_o\ $end
-$var wire 1 y \error_5|y~0_combout\ $end
-$var wire 1 z \a_r[23]~input_o\ $end
-$var wire 1 { \encode_crc8|xor_a_15_3_0|xor_final|y~0_combout\ $end
-$var wire 1 | \a_r[1]~input_o\ $end
-$var wire 1 } \error_1|y~0_combout\ $end
-$var wire 1 ~ \check~2_combout\ $end
-$var wire 1 !! \a_r[2]~input_o\ $end
-$var wire 1 "! \error_2|y~1_combout\ $end
-$var wire 1 #! \a_r[19]~input_o\ $end
-$var wire 1 $! \error_2|y~0_combout\ $end
-$var wire 1 %! \error_7|y~0_combout\ $end
-$var wire 1 &! \a_r[7]~input_o\ $end
-$var wire 1 '! \encode_crc8|xor_a_8_7|y~combout\ $end
-$var wire 1 (! \error_7|y~1_combout\ $end
+$var wire 1 n \a_r[16]~input_o\ $end
+$var wire 1 o \a_r[20]~input_o\ $end
+$var wire 1 p \error_5|y~0_combout\ $end
+$var wire 1 q \error_5|y~2_combout\ $end
+$var wire 1 r \a_r[18]~input_o\ $end
+$var wire 1 s \a_r[4]~input_o\ $end
+$var wire 1 t \error_4|y~0_combout\ $end
+$var wire 1 u \a_r[22]~input_o\ $end
+$var wire 1 v \error_4|y~1_combout\ $end
+$var wire 1 w \error_3|y~0_combout\ $end
+$var wire 1 x \a_r[3]~input_o\ $end
+$var wire 1 y \error_3|y~1_combout\ $end
+$var wire 1 z \check~2_combout\ $end
+$var wire 1 { \a_r[19]~input_o\ $end
+$var wire 1 | \encode_crc8|xor_14_11_4_2|y~0_combout\ $end
+$var wire 1 } \a_r[7]~input_o\ $end
+$var wire 1 ~ \encode_crc8|xor_10_9_8_7|y~combout\ $end
+$var wire 1 !! \error_7|y~0_combout\ $end
+$var wire 1 "! \encode_crc8|xor_a15_6|y~combout\ $end
+$var wire 1 #! \error_2|y~1_combout\ $end
+$var wire 1 $! \a_r[6]~input_o\ $end
+$var wire 1 %! \error_6|y~0_combout\ $end
+$var wire 1 &! \a_r[2]~input_o\ $end
+$var wire 1 '! \error_2|y~0_combout\ $end
+$var wire 1 (! \check~0_combout\ $end
 $var wire 1 )! \a_r[0]~input_o\ $end
 $var wire 1 *! \error_0|y~0_combout\ $end
 $var wire 1 +! \error_0|y~1_combout\ $end
-$var wire 1 ,! \check~0_combout\ $end
-$var wire 1 -! \check~1_combout\ $end
-$var wire 1 .! \check~4_combout\ $end
+$var wire 1 ,! \check~1_combout\ $end
+$var wire 1 -! \check~3_combout\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -142,52 +141,51 @@ x<
 0\
 1]
 0^
-0_
+1_
 1`
-0a
+1a
 0b
-0c
-0d
+1c
+1d
 0e
 0f
 1g
-1h
-1i
+0h
+0i
 0j
 0k
 1l
-1m
-1n
-0o
+0m
+0n
+1o
 0p
 0q
-1r
+0r
 1s
-1t
+0t
 0u
-1v
+0v
 0w
-0x
+1x
 0y
-1z
-1{
+0z
+0{
 0|
-1}
-0~
+0}
+1~
 0!!
 0"!
-0#!
+1#!
 0$!
 0%!
 0&!
 1'!
 0(!
 0)!
-0*!
-0+!
+1*!
+1+!
 0,!
 0-!
-0.!
 1!
 0"
 0#

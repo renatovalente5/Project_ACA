@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sat Dec  5 23:37:21 2020
+Fitter Status : Successful - Tue Dec  8 05:16:14 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : checker_crc_8
 Top-level Entity Name : checker_CRC_8
 Family : Cyclone IV GX
 Device : EP4CGX15BF14C6
 Timing Models : Final
-Total logic elements : 24 / 14,400 ( < 1 % )
-    Total combinational functions : 24 / 14,400 ( < 1 % )
+Total logic elements : 23 / 14,400 ( < 1 % )
+    Total combinational functions : 23 / 14,400 ( < 1 % )
     Dedicated logic registers : 0 / 14,400 ( 0 % )
 Total registers : 0
 Total pins : 25 / 81 ( 31 % )
