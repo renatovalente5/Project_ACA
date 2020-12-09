@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CRC_8
-Tue Dec  8 05:02:48 2020
+Wed Dec  9 22:52:33 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec  8 05:02:48 2020       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec  9 22:52:33 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; CRC_8                                       ;
 ; Top-level Entity Name              ; encoder_CRC_8                               ;
@@ -167,9 +167,7 @@ https://fpgasoftware.intel.com/eula.
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ; Library ;
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
 ; encoder_CRC_8.vhd                ; yes             ; User VHDL File  ; /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd ;         ;
-; gateXOR2.vhd                     ; yes             ; User VHDL File  ; /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR2.vhd      ;         ;
-; gateXOR3.vhd                     ; yes             ; User VHDL File  ; /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR3.vhd      ;         ;
-; gateXOR4.vhd                     ; yes             ; User VHDL File  ; /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR4.vhd      ;         ;
+; gateXOR.vhd                      ; yes             ; User VHDL File  ; /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR.vhd       ;         ;
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
 
 
@@ -279,27 +277,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Dec  8 05:02:38 2020
+    Info: Processing started: Wed Dec  9 22:52:24 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CRC_8 -c CRC_8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file encoder_CRC_8.vhd
-    Info (12022): Found design unit 1: encoder_CRC_8-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd Line: 9
-    Info (12023): Found entity 1: encoder_CRC_8 File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file gateXOR2.vhd
-    Info (12022): Found design unit 1: gateXOR2-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR2.vhd Line: 9
-    Info (12023): Found entity 1: gateXOR2 File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file gateXOR3.vhd
-    Info (12022): Found design unit 1: gateXOR3-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR3.vhd Line: 9
-    Info (12023): Found entity 1: gateXOR3 File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR3.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file gateXOR4.vhd
-    Info (12022): Found design unit 1: gateXOR4-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR4.vhd Line: 9
-    Info (12023): Found entity 1: gateXOR4 File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR4.vhd Line: 4
+    Info (12022): Found design unit 1: encoder_CRC_8-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd Line: 12
+    Info (12023): Found entity 1: encoder_CRC_8 File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file encoder_CRC_8_t.vhd
-    Info (12022): Found design unit 1: encoder_CRC_8_t-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8_t.vhd Line: 9
-    Info (12023): Found entity 1: encoder_CRC_8_t File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8_t.vhd Line: 4
+    Info (12022): Found design unit 1: encoder_CRC_8_t-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8_t.vhd Line: 12
+    Info (12023): Found entity 1: encoder_CRC_8_t File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8_t.vhd Line: 7
+Info (12021): Found 6 design units, including 3 entities, in source file gateXOR.vhd
+    Info (12022): Found design unit 1: gateXOR2-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR.vhd Line: 9
+    Info (12022): Found design unit 2: gateXOR3-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR.vhd Line: 22
+    Info (12022): Found design unit 3: gateXOR4-logicFunction File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR.vhd Line: 45
+    Info (12023): Found entity 1: gateXOR2 File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR.vhd Line: 4
+    Info (12023): Found entity 2: gateXOR3 File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR.vhd Line: 17
+    Info (12023): Found entity 3: gateXOR4 File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR.vhd Line: 40
 Info (12127): Elaborating entity "encoder_CRC_8" for the top level hierarchy
-Info (12128): Elaborating entity "gateXOR2" for hierarchy "gateXOR2:xor_a14_2" File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd Line: 39
+Info (12128): Elaborating entity "gateXOR2" for hierarchy "gateXOR2:xor_a14_2" File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd Line: 40
 Info (12128): Elaborating entity "gateXOR4" for hierarchy "gateXOR4:xor_r5" File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd Line: 72
 Info (12128): Elaborating entity "gateXOR3" for hierarchy "gateXOR3:xor_r4" File: /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd Line: 75
 Info (286030): Timing-Driven Synthesis is running
@@ -310,9 +306,9 @@ Info (21057): Implemented 43 device resources after synthesis - the final resour
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 19 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 412 megabytes
-    Info: Processing ended: Tue Dec  8 05:02:48 2020
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 415 megabytes
+    Info: Processing ended: Wed Dec  9 22:52:33 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:23
 
 

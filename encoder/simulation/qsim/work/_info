@@ -10,26 +10,26 @@ z2
 cModel Technology
 Z0 d/home/andralves/Documents/ACA/Projeto/projeto_git/encoder/simulation/qsim
 Eencoder_crc_8
-Z1 w1607402049
+Z1 w1607554392
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 76OUjOFMM1Jzd<9936DA;3
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z7 DPx10 cycloneive 21 cycloneive_components 0 22 dANj__M<MaN@;H9Tkm=iP1
-!i122 42
+!i122 44
 R0
 Z8 8CRC_8.vho
 Z9 FCRC_8.vho
 l0
 Z10 L78 1
-V5mcO=Vb;469gKjLj46^_12
-!s100 Oz;9J^F^[R6:NiA[`UgCN3
+VoYO[BI^gBOMFCoONiLkC]1
+!s100 OB3UJZ_eE^>`7nAfmI3b13
 Z11 OV;C;2020.1;71
 32
-Z12 !s110 1607402049
+Z12 !s110 1607554393
 !i10b 1
-Z13 !s108 1607402049.000000
+Z13 !s108 1607554393.000000
 Z14 !s90 -work|work|CRC_8.vho|
 Z15 !s107 CRC_8.vho|
 !i113 1
@@ -42,8 +42,8 @@ R4
 R5
 R6
 R7
-DEx4 work 13 encoder_crc_8 0 22 5mcO=Vb;469gKjLj46^_12
-!i122 42
+DEx4 work 13 encoder_crc_8 0 22 oYO[BI^gBOMFCoONiLkC]1
+!i122 44
 l175
 Z18 L112 682
 Ve=6@c[m0:l9gV[2hW0PO]3
@@ -239,10 +239,10 @@ R35
 R16
 R17
 Eencoder_crc_8_vhd_vec_tst
-Z37 w1607402048
+Z37 w1607554391
 R5
 R6
-!i122 43
+!i122 45
 R0
 Z38 8Waveform.vwf.vht
 Z39 FWaveform.vwf.vht
@@ -252,30 +252,30 @@ VKUX0=i0SQEdCEOlh]3`[?0
 !s100 [gGFoz9d@aK;:JHlm0^4e0
 R11
 32
-Z40 !s110 1607402050
+R12
 !i10b 1
 R13
-Z41 !s90 -work|work|Waveform.vwf.vht|
-Z42 !s107 Waveform.vwf.vht|
+Z40 !s90 -work|work|Waveform.vwf.vht|
+Z41 !s107 Waveform.vwf.vht|
 !i113 1
 R16
 R17
 Aencoder_crc_8_arch
 R5
 R6
-Z43 DEx4 work 25 encoder_crc_8_vhd_vec_tst 0 22 KUX0=i0SQEdCEOlh]3`[?0
-!i122 43
+Z42 DEx4 work 25 encoder_crc_8_vhd_vec_tst 0 22 KUX0=i0SQEdCEOlh]3`[?0
+!i122 45
 l45
 R36
-Vh@??hJhaA2YlbUo]TaOI;3
-!s100 Kh`6kk5Y@NI@@55kFnG5?0
+V:znKmM9T^og9A2F?H^R?<0
+!s100 lM;0m]QSkzQ;I7QZY`@RW1
 R11
 32
-R40
+R12
 !i10b 1
 R13
+R40
 R41
-R42
 !i113 1
 R16
 R17
@@ -287,7 +287,7 @@ R4
 R5
 R6
 R7
-!i122 42
+!i122 44
 R0
 R8
 R9
@@ -313,7 +313,7 @@ R5
 R6
 R7
 DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
-!i122 42
+!i122 44
 l65
 L51 20
 Via>5o7W??azG@W@@eFOTF0

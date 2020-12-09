@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "12/08/2020 05:38:40"
+-- Generated on "12/09/2020 22:48:47"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          checker_CRC_8
 -- 
@@ -39,7 +39,7 @@ SIGNAL check : STD_LOGIC;
 COMPONENT checker_CRC_8
 	PORT (
 	a_r : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
-	check : BUFFER STD_LOGIC
+	check : OUT STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
@@ -53,11 +53,19 @@ BEGIN
 t_prcs_a_r_23: PROCESS
 BEGIN
 	a_r(23) <= '1';
+	WAIT FOR 300000 ps;
+	a_r(23) <= '0';
+	WAIT FOR 170000 ps;
+	a_r(23) <= '1';
 WAIT;
 END PROCESS t_prcs_a_r_23;
 -- a_r[22]
 t_prcs_a_r_22: PROCESS
 BEGIN
+	a_r(22) <= '0';
+	WAIT FOR 300000 ps;
+	a_r(22) <= '1';
+	WAIT FOR 170000 ps;
 	a_r(22) <= '0';
 WAIT;
 END PROCESS t_prcs_a_r_22;
@@ -77,6 +85,10 @@ END PROCESS t_prcs_a_r_20;
 t_prcs_a_r_19: PROCESS
 BEGIN
 	a_r(19) <= '0';
+	WAIT FOR 300000 ps;
+	a_r(19) <= '1';
+	WAIT FOR 170000 ps;
+	a_r(19) <= '0';
 WAIT;
 END PROCESS t_prcs_a_r_19;
 -- a_r[18]
@@ -95,17 +107,29 @@ END PROCESS t_prcs_a_r_17;
 t_prcs_a_r_16: PROCESS
 BEGIN
 	a_r(16) <= '0';
+	WAIT FOR 300000 ps;
+	a_r(16) <= '1';
+	WAIT FOR 170000 ps;
+	a_r(16) <= '0';
 WAIT;
 END PROCESS t_prcs_a_r_16;
 -- a_r[15]
 t_prcs_a_r_15: PROCESS
 BEGIN
 	a_r(15) <= '1';
+	WAIT FOR 300000 ps;
+	a_r(15) <= '0';
+	WAIT FOR 170000 ps;
+	a_r(15) <= '1';
 WAIT;
 END PROCESS t_prcs_a_r_15;
 -- a_r[14]
 t_prcs_a_r_14: PROCESS
 BEGIN
+	a_r(14) <= '1';
+	WAIT FOR 300000 ps;
+	a_r(14) <= '0';
+	WAIT FOR 170000 ps;
 	a_r(14) <= '1';
 WAIT;
 END PROCESS t_prcs_a_r_14;
@@ -143,17 +167,27 @@ END PROCESS t_prcs_a_r_9;
 t_prcs_a_r_8: PROCESS
 BEGIN
 	a_r(8) <= '0';
+	WAIT FOR 300000 ps;
+	a_r(8) <= '1';
+	WAIT FOR 170000 ps;
+	a_r(8) <= '0';
 WAIT;
 END PROCESS t_prcs_a_r_8;
 -- a_r[7]
 t_prcs_a_r_7: PROCESS
 BEGIN
 	a_r(7) <= '0';
+	WAIT FOR 300000 ps;
+	a_r(7) <= '1';
 WAIT;
 END PROCESS t_prcs_a_r_7;
 -- a_r[6]
 t_prcs_a_r_6: PROCESS
 BEGIN
+	a_r(6) <= '0';
+	WAIT FOR 300000 ps;
+	a_r(6) <= '1';
+	WAIT FOR 170000 ps;
 	a_r(6) <= '0';
 WAIT;
 END PROCESS t_prcs_a_r_6;
@@ -167,6 +201,10 @@ END PROCESS t_prcs_a_r_5;
 t_prcs_a_r_4: PROCESS
 BEGIN
 	a_r(4) <= '1';
+	WAIT FOR 300000 ps;
+	a_r(4) <= '0';
+	WAIT FOR 170000 ps;
+	a_r(4) <= '1';
 WAIT;
 END PROCESS t_prcs_a_r_4;
 -- a_r[3]
@@ -179,6 +217,10 @@ END PROCESS t_prcs_a_r_3;
 t_prcs_a_r_2: PROCESS
 BEGIN
 	a_r(2) <= '0';
+	WAIT FOR 300000 ps;
+	a_r(2) <= '1';
+	WAIT FOR 170000 ps;
+	a_r(2) <= '0';
 WAIT;
 END PROCESS t_prcs_a_r_2;
 -- a_r[1]
@@ -190,6 +232,10 @@ END PROCESS t_prcs_a_r_1;
 -- a_r[0]
 t_prcs_a_r_0: PROCESS
 BEGIN
+	a_r(0) <= '0';
+	WAIT FOR 300000 ps;
+	a_r(0) <= '1';
+	WAIT FOR 170000 ps;
 	a_r(0) <= '0';
 WAIT;
 END PROCESS t_prcs_a_r_0;

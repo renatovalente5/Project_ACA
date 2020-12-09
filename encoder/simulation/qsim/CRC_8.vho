@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "12/08/2020 04:34:09"
+-- DATE "12/09/2020 22:53:12"
 
 -- 
 -- Device: Altera EP4CE6E22C6 Package TQFP144
@@ -78,7 +78,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	encoder_CRC_8 IS
     PORT (
 	a : IN std_logic_vector(15 DOWNTO 0);
-	r : OUT std_logic_vector(7 DOWNTO 0)
+	r : BUFFER std_logic_vector(7 DOWNTO 0)
 	);
 END encoder_CRC_8;
 

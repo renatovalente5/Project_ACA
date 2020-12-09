@@ -3,7 +3,7 @@ $comment
 		vcd file CRC_8.msim.vcd -direction
 $end
 $date
-	Tue Dec  8 04:34:10 2020
+	Wed Dec  9 22:53:13 2020
 $end
 $version
 	ModelSim Version 2020.1
@@ -188,6 +188,14 @@ x;
 1.
 0/
 10
+11
+02
+03
+04
+05
+06
+17
+18
 1B
 0C
 1D
@@ -212,14 +220,6 @@ x;
 0W
 1X
 1Y
-11
-02
-03
-04
-05
-06
-17
-18
 $end
 #80000
 0#

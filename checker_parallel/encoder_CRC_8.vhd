@@ -1,6 +1,9 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
+LIBRARY gateXOR;
+USE gateXOR.all;
+
 ENTITY encoder_CRC_8 IS
   PORT (a : IN STD_LOGIC_VECTOR(15 downto 0);
         r : OUT STD_LOGIC_VECTOR(7 downto 0));

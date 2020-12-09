@@ -1,5 +1,5 @@
 Fitter report for checker_crc_8
-Tue Dec  8 05:16:14 2020
+Wed Dec  9 22:47:19 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Dec  8 05:16:14 2020       ;
+; Fitter Status                      ; Successful - Wed Dec  9 22:47:19 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; checker_crc_8                               ;
 ; Top-level Entity Name              ; checker_CRC_8                               ;
@@ -649,12 +649,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node     ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                             ; Entity Name   ; Library Name ;
 +--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------+---------------+--------------+
-; |checker_CRC_8                 ; 23 (4)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 25   ; 0            ; 23 (4)       ; 0 (0)             ; 0 (0)            ; |checker_CRC_8                                                  ; checker_CRC_8 ; work         ;
+; |checker_CRC_8                 ; 23 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 25   ; 0            ; 23 (0)       ; 0 (0)             ; 0 (0)            ; |checker_CRC_8                                                  ; checker_CRC_8 ; work         ;
 ;    |encoder_CRC_8:encode_crc8| ; 4 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; |checker_CRC_8|encoder_CRC_8:encode_crc8                        ; encoder_CRC_8 ; work         ;
 ;       |gateXOR2:xor_10_9_8_7|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |checker_CRC_8|encoder_CRC_8:encode_crc8|gateXOR2:xor_10_9_8_7  ; gateXOR2      ; work         ;
 ;       |gateXOR2:xor_13_5_3_1|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |checker_CRC_8|encoder_CRC_8:encode_crc8|gateXOR2:xor_13_5_3_1  ; gateXOR2      ; work         ;
 ;       |gateXOR2:xor_14_11_4_2| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |checker_CRC_8|encoder_CRC_8:encode_crc8|gateXOR2:xor_14_11_4_2 ; gateXOR2      ; work         ;
 ;       |gateXOR2:xor_a15_6|     ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |checker_CRC_8|encoder_CRC_8:encode_crc8|gateXOR2:xor_a15_6     ; gateXOR2      ; work         ;
+;    |gateOR8:check_OR|          ; 4 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; |checker_CRC_8|gateOR8:check_OR                                 ; gateOR8       ; work         ;
+;       |gateOR2:OR_FINAL|       ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |checker_CRC_8|gateOR8:check_OR|gateOR2:OR_FINAL                ; gateOR2       ; work         ;
 ;    |gateXOR2:error_0|          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |checker_CRC_8|gateXOR2:error_0                                 ; gateXOR2      ; work         ;
 ;    |gateXOR2:error_1|          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |checker_CRC_8|gateXOR2:error_1                                 ; gateXOR2      ; work         ;
 ;    |gateXOR2:error_2|          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |checker_CRC_8|gateXOR2:error_2                                 ; gateXOR2      ; work         ;
@@ -1073,7 +1075,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 8A does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  2 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  5 pins available
         Info (176213): I/O bank number 9 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  0 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1092,12 +1094,12 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (144001): Generated suppressed messages file /home/andralves/Documents/ACA/Projeto/projeto_git/checker_parallel/output_files/checker_crc_8.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1019 megabytes
-    Info: Processing ended: Tue Dec  8 05:16:14 2020
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 1025 megabytes
+    Info: Processing ended: Wed Dec  9 22:47:19 2020
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
 

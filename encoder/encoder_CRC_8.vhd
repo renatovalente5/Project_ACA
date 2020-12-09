@@ -1,6 +1,9 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
+LIBRARY gateXOR;
+USE gateXOR.all;
+
 ENTITY encoder_CRC_8 IS
   PORT (a : IN STD_LOGIC_VECTOR(15 downto 0);
         r : OUT STD_LOGIC_VECTOR(7 downto 0));
@@ -31,8 +34,6 @@ ARCHITECTURE logicFunction OF encoder_CRC_8 IS
 							y : out STD_LOGIC);
 	end component;
 	
-	
-
 BEGIN
 
 	--LVL 1
@@ -61,7 +62,6 @@ BEGIN
 	
 	xor_10_9_8_7_6:gateXOR2 port map(a10_9_8_7, a(6), a10_9_8_7_6); --a10 xor a9  xor a8 xor a7 xor a6
 	
-	
 	--r7
 	xor_r7:			gateXOR2 port map(a14_11_4_2, a10_9_8_7_6, r(7));
 	
@@ -86,8 +86,4 @@ BEGIN
 	--r0
 	xor_r0:			gateXOR4 port map(a15_11, a12_0_3, a10_9_8_7, a(5), r(0));
 	
-	
-
-	
-  
 END logicFunction;

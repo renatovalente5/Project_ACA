@@ -1,10 +1,8 @@
 vendor_name = ModelSim
 source_file = 1, /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8.vhd
-source_file = 1, /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR2.vhd
-source_file = 1, /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR3.vhd
-source_file = 1, /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR4.vhd
 source_file = 1, /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/Waveform.vwf
 source_file = 1, /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/encoder_CRC_8_t.vhd
+source_file = 1, /home/andralves/Documents/ACA/Projeto/projeto_git/encoder/gateXOR.vhd
 source_file = 1, /opt/intelFPGA_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, /opt/intelFPGA_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, /opt/intelFPGA_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd

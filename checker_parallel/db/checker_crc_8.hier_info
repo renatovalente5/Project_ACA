@@ -23,7 +23,7 @@ a_r[20] => encoder_CRC_8:encode_crc8.a[12]
 a_r[21] => encoder_CRC_8:encode_crc8.a[13]
 a_r[22] => encoder_CRC_8:encode_crc8.a[14]
 a_r[23] => encoder_CRC_8:encode_crc8.a[15]
-check << check.DB_MAX_OUTPUT_PORT_TYPE
+check <= gateOR8:check_OR.y
 
 
 |checker_crc_8|encoder_CRC_8:encode_crc8
@@ -386,6 +386,60 @@ y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |checker_crc_8|gateXOR2:error_7
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker_crc_8|gateOR8:check_OR
+x[0] => gateOR2:OR_0.x0
+x[1] => gateOR2:OR_0.x1
+x[2] => gateOR2:OR_1.x0
+x[3] => gateOR2:OR_1.x1
+x[4] => gateOR2:OR_2.x0
+x[5] => gateOR2:OR_2.x1
+x[6] => gateOR2:OR_3.x0
+x[7] => gateOR2:OR_3.x1
+y <= gateOR2:OR_FINAL.y
+
+
+|checker_crc_8|gateOR8:check_OR|gateOR2:OR_0
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker_crc_8|gateOR8:check_OR|gateOR2:OR_1
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker_crc_8|gateOR8:check_OR|gateOR2:OR_2
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker_crc_8|gateOR8:check_OR|gateOR2:OR_3
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker_crc_8|gateOR8:check_OR|gateOR2:OR_4
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker_crc_8|gateOR8:check_OR|gateOR2:OR_5
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|checker_crc_8|gateOR8:check_OR|gateOR2:OR_FINAL
 x0 => y.IN0
 x1 => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE

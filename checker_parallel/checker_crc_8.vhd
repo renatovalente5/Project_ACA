@@ -1,6 +1,16 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
+LIBRARY encoder_CRC_8;
+USE encoder_CRC_8.all;
+
+LIBRARY gateXOR;
+USE gateXOR.all;
+
+LIBRARY gateOR;
+USE gateOR.all;
+
+
 ENTITY checker_CRC_8 IS
   PORT (a_r  		  : IN  STD_LOGIC_VECTOR(23 downto 0); -- a + r
 		  check 		  : OUT STD_LOGIC);
@@ -20,6 +30,11 @@ ARCHITECTURE logicFunction OF checker_CRC_8 IS
 		port( a 	: IN  STD_LOGIC_VECTOR(15 downto 0);
 				r 	: OUT  STD_LOGIC_VECTOR(7 downto 0));
 	end component;
+	
+	component gateOR8 IS
+		port(	x: IN STD_LOGIC_VECTOR(7 downto 0);
+				y: OUT STD_LOGIC);
+	end component;
 
 BEGIN
 	
@@ -36,6 +51,7 @@ BEGIN
 	error_7 : gateXOR2  port map(resto(7),a_r(7), err(7));
 	
 	
-	check <= err(0) or err(1) or err(2) or err(3) or err(4) or err(5) or err(6) or err(7);
+	check_OR: gateOR8   port map(err,check);
+	
 	
 END logicFunction;

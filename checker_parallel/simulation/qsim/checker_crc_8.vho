@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "12/08/2020 05:38:42"
+-- DATE "12/09/2020 22:48:48"
 
 -- 
 -- Device: Altera EP4CGX15BF14C6 Package FBGA169
@@ -78,7 +78,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	checker_CRC_8 IS
     PORT (
 	a_r : IN std_logic_vector(23 DOWNTO 0);
-	check : BUFFER std_logic
+	check : OUT std_logic
 	);
 END checker_CRC_8;
 
@@ -152,7 +152,7 @@ SIGNAL \error_4|y~1_combout\ : std_logic;
 SIGNAL \error_3|y~0_combout\ : std_logic;
 SIGNAL \a_r[3]~input_o\ : std_logic;
 SIGNAL \error_3|y~1_combout\ : std_logic;
-SIGNAL \check~2_combout\ : std_logic;
+SIGNAL \check_OR|OR_FINAL|y~2_combout\ : std_logic;
 SIGNAL \a_r[19]~input_o\ : std_logic;
 SIGNAL \encode_crc8|xor_14_11_4_2|y~0_combout\ : std_logic;
 SIGNAL \a_r[7]~input_o\ : std_logic;
@@ -164,12 +164,12 @@ SIGNAL \a_r[6]~input_o\ : std_logic;
 SIGNAL \error_6|y~0_combout\ : std_logic;
 SIGNAL \a_r[2]~input_o\ : std_logic;
 SIGNAL \error_2|y~0_combout\ : std_logic;
-SIGNAL \check~0_combout\ : std_logic;
+SIGNAL \check_OR|OR_FINAL|y~0_combout\ : std_logic;
 SIGNAL \a_r[0]~input_o\ : std_logic;
 SIGNAL \error_0|y~0_combout\ : std_logic;
 SIGNAL \error_0|y~1_combout\ : std_logic;
-SIGNAL \check~1_combout\ : std_logic;
-SIGNAL \check~3_combout\ : std_logic;
+SIGNAL \check_OR|OR_FINAL|y~1_combout\ : std_logic;
+SIGNAL \check_OR|OR_FINAL|y~combout\ : std_logic;
 
 COMPONENT hard_block
     PORT (
@@ -199,7 +199,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \check~3_combout\,
+	i => \check_OR|OR_FINAL|y~combout\,
 	devoe => ww_devoe,
 	o => \check~output_o\);
 
@@ -583,9 +583,9 @@ PORT MAP (
 	combout => \error_3|y~1_combout\);
 
 -- Location: LCCOMB_X24_Y4_N6
-\check~2\ : cycloneiv_lcell_comb
+\check_OR|OR_FINAL|y~2\ : cycloneiv_lcell_comb
 -- Equation(s):
--- \check~2_combout\ = (\error_4|y~0_combout\ & ((\error_3|y~0_combout\ $ (\error_3|y~1_combout\)) # (!\error_4|y~1_combout\))) # (!\error_4|y~0_combout\ & ((\error_4|y~1_combout\) # (\error_3|y~0_combout\ $ (\error_3|y~1_combout\))))
+-- \check_OR|OR_FINAL|y~2_combout\ = (\error_4|y~0_combout\ & ((\error_3|y~0_combout\ $ (\error_3|y~1_combout\)) # (!\error_4|y~1_combout\))) # (!\error_4|y~0_combout\ & ((\error_4|y~1_combout\) # (\error_3|y~0_combout\ $ (\error_3|y~1_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -597,7 +597,7 @@ PORT MAP (
 	datab => \error_4|y~1_combout\,
 	datac => \error_3|y~0_combout\,
 	datad => \error_3|y~1_combout\,
-	combout => \check~2_combout\);
+	combout => \check_OR|OR_FINAL|y~2_combout\);
 
 -- Location: IOIBUF_X8_Y0_N1
 \a_r[19]~input\ : cycloneiv_io_ibuf
@@ -761,9 +761,9 @@ PORT MAP (
 	combout => \error_2|y~0_combout\);
 
 -- Location: LCCOMB_X23_Y3_N10
-\check~0\ : cycloneiv_lcell_comb
+\check_OR|OR_FINAL|y~0\ : cycloneiv_lcell_comb
 -- Equation(s):
--- \check~0_combout\ = (\error_6|y~0_combout\) # (\error_2|y~1_combout\ $ (\error_2|y~0_combout\ $ (\encode_crc8|xor_14_11_4_2|y~0_combout\)))
+-- \check_OR|OR_FINAL|y~0_combout\ = (\error_6|y~0_combout\) # (\error_2|y~1_combout\ $ (\error_2|y~0_combout\ $ (\encode_crc8|xor_14_11_4_2|y~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -775,7 +775,7 @@ PORT MAP (
 	datab => \error_6|y~0_combout\,
 	datac => \error_2|y~0_combout\,
 	datad => \encode_crc8|xor_14_11_4_2|y~0_combout\,
-	combout => \check~0_combout\);
+	combout => \check_OR|OR_FINAL|y~0_combout\);
 
 -- Location: IOIBUF_X33_Y10_N1
 \a_r[0]~input\ : cycloneiv_io_ibuf
@@ -823,9 +823,9 @@ PORT MAP (
 	combout => \error_0|y~1_combout\);
 
 -- Location: LCCOMB_X23_Y3_N6
-\check~1\ : cycloneiv_lcell_comb
+\check_OR|OR_FINAL|y~1\ : cycloneiv_lcell_comb
 -- Equation(s):
--- \check~1_combout\ = (\error_7|y~0_combout\) # ((\check~0_combout\) # (\encode_crc8|xor_10_9_8_7|y~combout\ $ (\error_0|y~1_combout\)))
+-- \check_OR|OR_FINAL|y~1_combout\ = (\error_7|y~0_combout\) # ((\check_OR|OR_FINAL|y~0_combout\) # (\encode_crc8|xor_10_9_8_7|y~combout\ $ (\error_0|y~1_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -835,14 +835,14 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \error_7|y~0_combout\,
 	datab => \encode_crc8|xor_10_9_8_7|y~combout\,
-	datac => \check~0_combout\,
+	datac => \check_OR|OR_FINAL|y~0_combout\,
 	datad => \error_0|y~1_combout\,
-	combout => \check~1_combout\);
+	combout => \check_OR|OR_FINAL|y~1_combout\);
 
 -- Location: LCCOMB_X23_Y3_N4
-\check~3\ : cycloneiv_lcell_comb
+\check_OR|OR_FINAL|y\ : cycloneiv_lcell_comb
 -- Equation(s):
--- \check~3_combout\ = (\error_1|y~1_combout\) # ((\error_5|y~2_combout\) # ((\check~2_combout\) # (\check~1_combout\)))
+-- \check_OR|OR_FINAL|y~combout\ = (\error_1|y~1_combout\) # ((\error_5|y~2_combout\) # ((\check_OR|OR_FINAL|y~2_combout\) # (\check_OR|OR_FINAL|y~1_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -852,9 +852,9 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \error_1|y~1_combout\,
 	datab => \error_5|y~2_combout\,
-	datac => \check~2_combout\,
-	datad => \check~1_combout\,
-	combout => \check~3_combout\);
+	datac => \check_OR|OR_FINAL|y~2_combout\,
+	datad => \check_OR|OR_FINAL|y~1_combout\,
+	combout => \check_OR|OR_FINAL|y~combout\);
 
 ww_check <= \check~output_o\;
 END structure;

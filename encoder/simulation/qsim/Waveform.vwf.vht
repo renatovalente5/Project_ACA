@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "12/08/2020 04:34:08"
+-- Generated on "12/09/2020 22:53:11"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          encoder_CRC_8
 -- 
@@ -39,7 +39,7 @@ SIGNAL r : STD_LOGIC_VECTOR(7 DOWNTO 0);
 COMPONENT encoder_CRC_8
 	PORT (
 	a : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	r : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+	r : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN

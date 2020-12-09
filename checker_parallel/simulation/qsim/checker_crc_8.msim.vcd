@@ -3,7 +3,7 @@ $comment
 		vcd file checker_crc_8.msim.vcd -direction
 $end
 $date
-	Tue Dec  8 05:38:43 2020
+	Wed Dec  9 22:48:49 2020
 $end
 $version
 	ModelSim Version 2020.1
@@ -104,7 +104,7 @@ $var wire 1 v \error_4|y~1_combout\ $end
 $var wire 1 w \error_3|y~0_combout\ $end
 $var wire 1 x \a_r[3]~input_o\ $end
 $var wire 1 y \error_3|y~1_combout\ $end
-$var wire 1 z \check~2_combout\ $end
+$var wire 1 z \check_OR|OR_FINAL|y~2_combout\ $end
 $var wire 1 { \a_r[19]~input_o\ $end
 $var wire 1 | \encode_crc8|xor_14_11_4_2|y~0_combout\ $end
 $var wire 1 } \a_r[7]~input_o\ $end
@@ -116,12 +116,12 @@ $var wire 1 $! \a_r[6]~input_o\ $end
 $var wire 1 %! \error_6|y~0_combout\ $end
 $var wire 1 &! \a_r[2]~input_o\ $end
 $var wire 1 '! \error_2|y~0_combout\ $end
-$var wire 1 (! \check~0_combout\ $end
+$var wire 1 (! \check_OR|OR_FINAL|y~0_combout\ $end
 $var wire 1 )! \a_r[0]~input_o\ $end
 $var wire 1 *! \error_0|y~0_combout\ $end
 $var wire 1 +! \error_0|y~1_combout\ $end
-$var wire 1 ,! \check~1_combout\ $end
-$var wire 1 -! \check~3_combout\ $end
+$var wire 1 ,! \check_OR|OR_FINAL|y~1_combout\ $end
+$var wire 1 -! \check_OR|OR_FINAL|y~combout\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -235,4 +235,105 @@ x<
 0Y
 0Z
 $end
+#300000
+0!
+1"
+1%
+1(
+0)
+0*
+10
+11
+12
+04
+16
+18
+1Z
+1X
+0V
+1T
+1S
+1R
+0L
+0K
+1J
+1G
+1D
+0C
+0a
+1u
+1{
+1n
+0]
+0`
+1b
+1}
+1$!
+0s
+1&!
+1)!
+1t
+1q
+1i
+1p
+1v
+0c
+0i
+0q
+1-!
+0-!
+1\
+1[
+0\
+19
+0[
+09
+#470000
+1!
+0"
+0%
+0(
+1)
+1*
+00
+02
+14
+06
+08
+0Z
+0X
+1V
+0T
+0R
+1L
+1K
+0J
+0G
+0D
+1C
+1a
+0u
+0{
+0n
+1]
+1`
+0b
+0$!
+1s
+0&!
+0)!
+0t
+1q
+1!!
+1i
+0p
+0v
+1c
+0i
+0q
+1,!
+1-!
+1\
+1[
+19
 #1000000
