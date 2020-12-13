@@ -39,7 +39,6 @@ Informações sobre como o CRC8 foi feito.
 
 Várias iterações para agrupar as entradas do encoder para diminuir o número de XOR-gates.
 
-
 ## 3. Realizado por:
 
 | Nome            | GitHub        | Mail |
